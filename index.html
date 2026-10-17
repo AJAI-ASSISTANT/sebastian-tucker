@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sebastian Tucker — Event Production</title>
+<meta name="description" content="Sebastian Tucker — event production services. Call, text, email, save contact, or pay by Zelle or Apple Pay.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Sebastian Tucker — Event Production">
+<meta property="og:description" content="Call, text, email or save my contact. Zelle or Apple Pay: 315-664-5299">
+<meta property="og:url" content="https://sebastian.thefinerthingsevents.com/">
+<link rel="canonical" href="https://sebastian.thefinerthingsevents.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23000'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='24' fill='%23bcdcff' text-anchor='middle'%3EST%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* One dark room, on purpose: a light theme would be a different product.
+     Every colour is set explicitly rather than inherited. */
+  :root { color-scheme: dark; --ink:#fff; --dim:rgba(255,255,255,.66);
+    --stage:#000; --glow:#bcdcff; --line:rgba(188,220,255,.34); --glass:rgba(4,5,10,.42);
+    --display:"Cormorant Garamond",Georgia,serif;
+    --body:Jost,"Helvetica Neue",system-ui,sans-serif; }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{height:100%}
+  body{margin:0;background:var(--stage);color:var(--ink);
+    font:300 16px/1.5 var(--body);overflow:hidden}
+  #bg{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0}
+  main{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;
+    align-items:center;justify-content:space-between;
+    padding-top:calc(46px + env(safe-area-inset-top,0px));
+    padding-bottom:calc(30px + env(safe-area-inset-bottom,0px));
+    padding-left:max(16px,env(safe-area-inset-left,0px));
+    padding-right:max(16px,env(safe-area-inset-right,0px))}
+  h1{margin:0;font:500 clamp(27px,7vw,38px)/1.03 var(--display);text-align:center;
+    text-shadow:0 2px 24px rgba(0,0,0,.95)}
+  .rl{margin:6px 0 0;font:400 10px/1 var(--body);letter-spacing:.32em;
+    text-transform:uppercase;color:var(--glow);text-align:center;
+    text-shadow:0 1px 12px rgba(0,0,0,1)}
+  .bot{display:grid;gap:18px;justify-items:center;width:100%}
+  .btns{display:flex;gap:14px;justify-content:center}
+  .ico{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;
+    background:var(--glass);border:1px solid rgba(255,255,255,.2);color:var(--ink);
+    -webkit-backdrop-filter:blur(13px);backdrop-filter:blur(13px);
+    text-decoration:none;cursor:pointer;transition:transform .18s,background .25s}
+  .ico.on{background:var(--glow);color:#050a16;border-color:transparent;
+    box-shadow:0 12px 30px -12px var(--glow)}
+  .ico:active{transform:scale(.93)}
+  .ico:focus-visible{outline:2px solid var(--glow);outline-offset:3px}
+  .ico svg{width:20px;height:20px}
+  .tail{text-align:center;display:grid;gap:7px;justify-items:center}
+  .sm{margin:0;font-size:12.5px;color:var(--dim);letter-spacing:.03em;
+    word-break:break-word}
+  .lbl{font:400 9px/1 var(--body);letter-spacing:.26em;text-transform:uppercase;
+    color:var(--glow)}
+  .mini{margin-left:8px;padding:5px 9px;border-radius:9px;border:1px solid var(--line);
+    background:rgba(255,255,255,.07);color:var(--glow);cursor:pointer;
+    font:400 9px/1 var(--body);letter-spacing:.16em;text-transform:uppercase}
+  .said{position:fixed;z-index:3;left:50%;
+    bottom:calc(132px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);
+    padding:9px 15px;border-radius:999px;background:rgba(4,7,14,.9);
+    border:1px solid var(--line);color:var(--ink);font:400 12px/1 var(--body);
+    opacity:0;transition:opacity .25s;pointer-events:none;white-space:nowrap}
+  .said.on{opacity:1}
+</style>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<main>
+  <div>
+    <h1>Sebastian Tucker</h1>
+    <p class="rl">Event production services</p>
+  </div>
+  <div class="bot">
+    <div class="btns">
+      <a class="ico on" href="tel:+13156645299" aria-label="Call 315-664-5299"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+      <a class="ico" href="sms:+13156645299" aria-label="Text 315-664-5299"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H8l-4 4z"/></svg></a>
+      <a class="ico" href="mailto:sebastiantucker1020@gmail.com" aria-label="Email Sebastian Tucker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+      <a class="ico" href="sebastian-tucker.vcf" download="Sebastian Tucker.vcf" aria-label="Save Sebastian Tucker to contacts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></a>
+    </div>
+    <div class="tail">
+      <p class="sm">315-664-5299 &middot; sebastiantucker1020@gmail.com</p>
+      <p class="sm"><span class="lbl">Zelle or Apple Pay</span> 315-664-5299<button class="mini" type="button" id="copy">Copy</button></p>
+    </div>
+  </div>
+</main>
+<div class="said" aria-live="polite"></div>
+<script src="room.js"></script>
+<script>
+(() => {
+  const btn = document.getElementById('copy'), said = document.querySelector('.said');
+  if (!btn) return;
+  btn.addEventListener('click', async () => {
+    const tag = '315-664-5299';
+    let ok = true;
+    try { await navigator.clipboard.writeText(tag); }
+    catch (_) {
+      try {
+        const t = document.createElement('textarea');
+        t.value = tag; t.style.position = 'fixed'; t.style.opacity = '0';
+        document.body.appendChild(t); t.select();
+        ok = document.execCommand('copy'); t.remove();
+      } catch (__) { ok = false; }
+    }
+    said.textContent = ok ? 'Copied — send it by Zelle or Apple Pay' : 'Could not copy — select it and copy by hand';
+    said.classList.add('on');
+    clearTimeout(said._t);
+    said._t = setTimeout(() => said.classList.remove('on'), 2300);
+  });
+})();
+</script>
+</body>
+</html>
